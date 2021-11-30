@@ -1,0 +1,8 @@
+﻿@page
+@{
+    Layout = null;
+}
+@if (Response.StatusCode == (int)System.Net.HttpStatusCode.Accepted)
+{
+    @Html.Raw("[accepted]")
+}
